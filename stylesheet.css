@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color-Palette
+Light - #DAD7CD - Section Backgrounds
+Lightgreen - #A3B18A - Forms
+Midgreen - #588157 - Buttons 
+Darkgreen - #3A5A40 - Nav / Footer
+Darkestgreen - #24362C - Headers & Text
+White - #FFFFFF  */
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    color: #24362C;
+}
+
+
+
+/* ========== Navbar ============== */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #3A5A40;
+    padding: 0px 20px;
+}
+
+ul {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 0px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 2.125em;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.4;
+}
+
+
+.current {
+    padding: 8px 26px;
+    border-radius: 8px;
+    background-color: #24362C ;
+    text-decoration: underline;
+}
+
+
+a:hover {
+
+}
+
+a:active {
+ 
+}
+
+a:visited {
+    color: none;
+}
+
+/* ========= Section 1 ===========  */
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-image: url('images/img-bg-annie-spratt-8mqOw4DBBSg-unsplash.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;    
+}
+
+/* #background-img {
+    position: absolute;
+    width: 100%;
+    opacity: 20%;
+    height: auto;
+    z-index: -1;
+    
+} */
+
+#hero-img {
+height: 350px;
+border-radius: 8px; 
+}
+
+
+#container-content{
+    border: 1px solid red;
+    width: 40%;
+    border: none;
+    opacity: 100%;
+    color: white;
+}
+
+
+#container-content button {
+    padding: 16px 48px;
+    background-color: #588157;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+/* ========= Middle Section ============ */
+.container-2 {
+    background-color: #DAD7CD;
+    padding: 40px 0px;
+    width: 100%;
+}
+
+.content-mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+ }
+
+
+
+ .card {
+    max-width: 25%;
+    border: 1px solid red ;
+
+ }
+ 
+ .card img {
+    height: 300px;
+    width: 100%;
+    border: 1px solid red ;
+    border-radius: 8px;
+    padding: 20px;
+
+ }
+
+.mid-btn {
+    padding: 16px 48px;
+    background-color: #588157;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+
+/* ========= Section 3 ===========  */
+
+.container-3 {
+    width: 1200px;
+}
+
+.container-3 img {
+    width: 500px;
+}
+
+
+.signup-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 40px 120px; */
+    background-color: #A3B18A;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form-content {
+    margin: auto;
+    border: 1px red solid;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+    border: 1px red solid;
+    padding: 40px 0px;
+}
+
+
+.input-box {
+    height: 40px;
+    width: 450px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-btn {
+    margin-top: 20px;
+    margin-left: auto;
+    color: white;
+    border: none;
+    background-color: #588157;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+
+/* ====== FOOTER ========== */
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: #3A5A40;
+    padding: 0px 20px;
+}
+
+
+
+/* ============ PAGE 2 (SERVICES) ====================== */
