@@ -98,7 +98,8 @@ a:visited {
    background-image: url('images/img-bg-annie-spratt-8mqOw4DBBSg-unsplash.jpg');
    background-position: center;
    background-size: cover;
-   background-repeat: no-repeat;    
+   background-repeat: no-repeat;  
+   padding: 60px 0px;
 }
 
 /* #background-img {
@@ -117,11 +118,12 @@ border-radius: 8px;
 
 
 #container-content{
-    border: 1px solid red;
-    width: 40%;
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
     border: none;
     opacity: 100%;
-    color: white;
+    margin: 40px;
+    padding: 20px;
 }
 
 
@@ -140,7 +142,13 @@ border-radius: 8px;
 .container-2 {
     background-color: #DAD7CD;
     padding: 40px 0px;
+    max-height: 700px;
     width: 100%;
+}
+
+.container-2-content {
+    margin: auto;
+    max-width: 1440px;
 }
 
 .content-mid {
