@@ -31,7 +31,7 @@ nav {
     height: 100px;
     width: 100%;
     background-color: #3A5A40;
-    padding: 0px 20px;
+    padding: 0px 40px;
 }
 
 ul {
@@ -41,7 +41,7 @@ ul {
 }
 
 li {
-    padding: 0px 50px;
+    padding: 0px 40px;
 }
 
 a {
@@ -91,15 +91,12 @@ a:visited {
 
 /* ========= Section 1 ===========  */
 .container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
    background-image: url('images/img-bg-annie-spratt-8mqOw4DBBSg-unsplash.jpg');
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;  
-   padding: 60px 0px;
+   height: auto;
+   width: 100%;
 }
 
 /* #background-img {
@@ -111,25 +108,34 @@ a:visited {
     
 } */
 
+#content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1375px;
+    border: 8px solid red;
+    margin: auto;
+}
+
 #hero-img {
 height: 350px;
 border-radius: 8px; 
 }
 
 
-#container-content{
+#content{
     background-color: rgb(255, 255, 255);
     max-width: 500px;
     border: none;
     opacity: 100%;
-    margin: 40px;
     padding: 20px;
 }
 
 
-#container-content button {
+#content button {
     padding: 16px 48px;
-    background-color: #588157;
+    background-color: #24362C;
     border: none;
     border-radius: 8px;
     color: white;
@@ -138,41 +144,42 @@ border-radius: 8px;
     font-weight: 800;
 }
 
-/* ========= Middle Section ============ */
+/* ========= Section 2 ============ */
 .container-2 {
     background-color: #DAD7CD;
     padding: 40px 0px;
-    max-height: 700px;
+    max-height: auto;
     width: 100%;
+  
 }
 
-.container-2-content {
+.container-content-2 {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1375px;
+    border: red solid 1px;
 }
 
 .content-mid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    flex: 4%;
+    justify-content: space-between;
     height: auto;
  }
 
 
 
  .card {
-    max-width: 25%;
+    max-width: 400px;
     border: 1px solid red ;
 
  }
  
  .card img {
-    height: 300px;
+    height: 260px;
     width: 100%;
     border: 1px solid red ;
     border-radius: 8px;
-    padding: 20px;
 
  }
 
@@ -185,17 +192,21 @@ border-radius: 8px;
     margin-top: 20px;
     font-size: 1.5em;
     font-weight: 500;
+    margin-left: auto;
 }
 
 
 /* ========= Section 3 ===========  */
 
 .container-3 {
-    width: 1200px;
+    max-width: 1375px;
+    height: auto;
+    margin: 40px auto;
 }
 
-.container-3 img {
-    width: 500px;
+#form-img {
+    max-height: 500px;
+    width: 600px;
 }
 
 
@@ -203,26 +214,26 @@ border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin: 40px 120px; */
     background-color: #A3B18A;
     border-radius: 8px;
     width: 100%;
+    /* border: solid 8px red; */
 }
-
-.form-content {
-    margin: auto;
-    border: 1px red solid;
-}
-
 
 form {
     display: flex;
     flex-direction: column;
     font-size: 1.25em;
-    border: 1px red solid;
-    padding: 40px 0px;
+   
 }
 
+#form-name {
+    margin: 20px 0;
+}
+
+.form-content {
+    margin: auto;
+}
 
 .input-box {
     height: 40px;
@@ -236,7 +247,7 @@ form {
     margin-left: auto;
     color: white;
     border: none;
-    background-color: #588157;
+    background-color: #24362C;
     width: 200px;
     padding: 10px;
     font-size: 1em;
@@ -249,13 +260,230 @@ form {
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100px;
     width: 100%;
-    color: white;
     background-color: #3A5A40;
-    padding: 0px 20px;
+    padding: 0px 40px;
+    color: white;
+}
+
+#footer-content {text-align: center;}
+
+
+
+/* =============================== PAGE 2 (SERVICES)=============================== */
+
+/* ====================== TOP CONTAINER ===================== */
+
+.container-top{
+    height: auto;
+    padding: 40px 0px;
+    font-size: 1.3em;
+    background-color: #DAD7CD;
+    
+}
+
+.content-top {
+    max-width: 1100px;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    border: solid 4px red;
+}
+
+.container-top h1 {
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.container-top p {
+    line-height: 1.4;
+    font-size: 1.25em;
+}
+
+/* ===================== MIDDLE CONTAINER ================= */
+
+.container-middle {
+    height: 900px;
+    width: 100%;
+}
+
+.content-middle {
+    margin: 60px auto;
+    max-width: 1375px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: solid red 2px;
+}
+
+.content-middle img {
+    height: 400px;
+    width: 500px;
+    border-radius: 8px;
+
+}
+
+#text-mid {
+    padding: 40px;
+    max-width: 700px;
+    border: solid red 2px;
+}
+
+#btn-page2 {
+    padding: 16px 36px;
+    background-color: #588157;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+
+/* ===================== BOTTOM CONTAINER ================= */
+.bottom-container {
+    background-color: #A3B18A;
+    height: auto;
+    width: 100%;
+}
+
+.bottom-card {
+    max-width: 1375px;
+    border: 4px solid blueviolet;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.bottom-card h1 {
+    margin: 20px 0px;
+}
+
+
+#bottom-img {
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#bottom-content {
+    text-align: justify;
+}
+
+#bottom-text {
+    font-size: 1.5em;
+    line-height: 1.4;
+    width: 100%;
+}
+
+#bottom-btn {
+    padding: 16px 36px;
+    background-color: #588157;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.25em;
+    font-weight: 800;
+    /* margin-left: auto; */
+}
+
+
+/* =============================== PAGE 3 (CONTACT)=============================== */
+.contact-container {
+    /* position: absolute;
+    top: 400px; */
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    /* border: solid red 2px; */
+}
+
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #A3B18A;
+    border-radius: 8px;
+    width: 50%;
+    border: solid red 2px;
+    margin: 0 auto;
+}
+
+.contact-page-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #DAD7CD;
+    padding: 100px 0;
+
+}
+
+.heading-contact {
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    border: solid red 2px;
+    text-align: justify;
+}
+
+/* ========= Contact Form =========== */
+
+.contact-form-content {
+    border: solid red 2px;
+    padding: 10px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+   
+}
+
+#contact-form {
+    margin: 20px 0;
+    border: solid blue 2px;
+}
+
+
+.input-box {
+    height: 40px;
+    width: 450px;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-box-message {
+    height: 220px;
+    width: 450px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-btn {
+    margin: 20px auto;
+    color: white;
+    border: none;
+    background-color: #24362C;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
 }
 
 
 
-/* ============ PAGE 2 (SERVICES) ====================== */
+/* ======================= RESPONSIVENESS ===================================== */
+/* @media */

@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+<!-- <style>
+    /* Add internal + inline styling for the logo (Assignment Tasks!!!!) or add btn hover (transition?)!!! =======  */
+</style> -->
+
 </head>
 <body>
     <header>
@@ -24,42 +29,40 @@
     <section>
         <div class="container">
             <!-- <img id="background-img" src="images/img-bg-annie-spratt-8mqOw4DBBSg-unsplash.jpg" alt="background-img" /> -->
-            <div id="container-content">
-                <h1>AuraLife Holistic Practices</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eveniet quae deleniti tenetur qui doloribus, sed voluptates voluptatibus libero itaque odit natus aspernatur repudiandae, inventore debitis minus doloremque blanditiis eligendi.</p>
-                <button>Sign Up Today</button>
+            <div id="content-container">
+                <div id="content">
+                    <h1>AuraLife Holistic Practices</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eveniet quae deleniti tenetur qui doloribus, sed voluptates voluptatibus libero itaque odit natus aspernatur repudiandae, inventore debitis minus doloremque blanditiis eligendi.</p>
+                    <button>Sign Up Today</button>
+                </div>
+                <img id="hero-img"  src="images/img-1-chelsea-shapouri-r40EYKVyutI-unsplash.jpg" alt="section-img" />
             </div>
-            <img id="hero-img"  src="images/img-1-chelsea-shapouri-r40EYKVyutI-unsplash.jpg" alt="section-img" />
-        </div>
+            </div>
         </div> 
 
     </section>
 
     <section>
         <div class="container-2">
-            <div class="container-2-content">
+            <div class="container-content-2">
                 <h1>Our Services</h1>
                 <div class="content-mid">
-                    
                     <div class="card">
                         <img src="images/img-2-toa-heftiba-a9pFSC8dTlo-unsplash.jpg" alt="Deep-tissue-img">
                         <h3>Deep tissue Massage</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque sapiente rerum accusantium illo fugit illum quos autem mollitia nihil placeat reprehenderit quae natus cum itaque quibusdam minima quam laudantium.</p>
                     </div>
-                    
                     <div class="card">
                         <img src="images/img-3-content-pixie-0-c1F9uukx8-unsplash.jpg" alt="Natural-remedies-img">
                         <h3>Natural Remedies</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque sapiente rerum accusantium illo fugit illum quos autem mollitia nihil placeat reprehenderit quae natus cum itaque quibusdam minima quam laudantium.</p>
                     </div>
-                    
                     <div class="card">
                         <img src="images/img-4-antonika-chanel-RJCslxmvBcs-unsplash.jpg" alt="Acupuncture-img">
-                        <h3>Deep tissue Massage</h3>
+                        <h3>Acupuncture</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, atque sapiente rerum accusantium illo fugit illum quos autem mollitia nihil placeat reprehenderit quae natus cum itaque quibusdam minima quam laudantium.</p>
                     </div>
-                </div>
-                <button class="mid-btn">Learn More</button>
+                    <button class="mid-btn">Learn More</button>
                 </div>
             </div>
     </section>
@@ -67,9 +70,9 @@
     <section>
         <div class="container-3">
             <div class="signup-card">
-                <img src="images/img-5-averie-woodard-Av_NirIguEc-unsplash.jpg" alt="Sign Up-img">
+                <img id="form-img" src="images/img-5-averie-woodard-Av_NirIguEc-unsplash.jpg" alt="Sign Up-img">
                 <div class="form-content">
-                    <h2>Join Our Contact List</h2>
+                   <h2 id="form-name">Join Our Contact List</h2>
                     <form>
                         <label for="">Name:</label>
                         <input class="input-box" type="name" name="Name" id="name">
@@ -82,9 +85,8 @@
                         
                         <label for="">Location:</label>
                         <input class="input-box" type="Location" name="Location" id="Location">
-                        
-    
-                        <button class="form-btn">Sign Up Today!</button>
+                    
+                        <button class="form-btn">Sign Up Today</button>
                     </form>
                 </div>
             </div>
@@ -95,8 +97,10 @@
 
     <footer>
         <a href="homepage.html"><img src="images/Logo.svg" alt="logo" /></a>
-        <p><b>Time</b> to <b>heal</b> your <b>body</b> it's <b>2024!</b></p>
-        <p>Created by Emanuel J. Thomas</p>
+        <div id="footer-content">
+            <p><b>Time</b> to <b>heal</b> your <b>body</b> it's <b>2024!</b></p>
+            <p>Created by Emanuel J. Thomas</p>
+        </div>
     </footer>
     
 </body>
