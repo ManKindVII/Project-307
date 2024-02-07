@@ -18,6 +18,7 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Nunito', sans-serif;
+    /* background-color: #DAD7CD; */
     color: #24362C;
 }
 
@@ -66,28 +67,11 @@ h3 {
 p {
     font-size: 1.25em;
     line-height: 1.4;
+    opacity: 80%;
 }
 
 
-.current {
-    padding: 8px 26px;
-    border-radius: 8px;
-    background-color: #24362C ;
-    text-decoration: underline;
-}
 
-
-a:hover {
-
-}
-
-a:active {
- 
-}
-
-a:visited {
-    color: none;
-}
 
 /* ========= Section 1 ===========  */
 .container {
@@ -114,8 +98,9 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     max-width: 1375px;
-    border: 8px solid red;
+    /* border: 8px solid red; */
     margin: auto;
+    padding: 40px 0px;
 }
 
 #hero-img {
@@ -126,16 +111,17 @@ border-radius: 8px;
 
 #content{
     background-color: rgb(255, 255, 255);
-    max-width: 500px;
+    max-width: 600px;
     border: none;
     opacity: 100%;
     padding: 20px;
+    border-radius: 8px;
 }
 
 
 #content button {
-    padding: 16px 48px;
-    background-color: #24362C;
+    padding: 20px 48px;
+    background-color: #588157;
     border: none;
     border-radius: 8px;
     color: white;
@@ -146,7 +132,7 @@ border-radius: 8px;
 
 /* ========= Section 2 ============ */
 .container-2 {
-    background-color: #DAD7CD;
+    background-color: #ffffff;
     padding: 40px 0px;
     max-height: auto;
     width: 100%;
@@ -156,7 +142,7 @@ border-radius: 8px;
 .container-content-2 {
     margin: auto;
     max-width: 1375px;
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
 .content-mid {
@@ -171,14 +157,14 @@ border-radius: 8px;
 
  .card {
     max-width: 400px;
-    border: 1px solid red ;
+    /* border: 1px solid red ; */
 
  }
  
  .card img {
     height: 260px;
     width: 100%;
-    border: 1px solid red ;
+    /* border: 1px solid red ; */
     border-radius: 8px;
 
  }
@@ -197,11 +183,17 @@ border-radius: 8px;
 
 
 /* ========= Section 3 ===========  */
-
 .container-3 {
+    background-color: #DAD7CD;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.container-3-content {
+    background-color: #DAD7CD;
     max-width: 1375px;
     height: auto;
-    margin: 40px auto;
+    margin: auto;
 }
 
 #form-img {
@@ -247,7 +239,7 @@ form {
     margin-left: auto;
     color: white;
     border: none;
-    background-color: #24362C;
+    background-color: #588157;
     width: 200px;
     padding: 10px;
     font-size: 1em;
@@ -278,7 +270,7 @@ footer {
 
 .container-top{
     height: auto;
-    padding: 40px 0px;
+    padding: 30px 0px;
     font-size: 1.3em;
     background-color: #DAD7CD;
     
@@ -289,7 +281,7 @@ footer {
     margin: auto;
     text-align: justify;
     padding: 10px;
-    border: solid 4px red;
+    /* border: solid 4px red; */
 }
 
 .container-top h1 {
@@ -298,6 +290,11 @@ footer {
     text-align: center;
     margin-bottom: 20px;
 
+}
+
+#heading-bg {
+    background-color: white;
+    width: 100%;
 }
 
 .container-top p {
@@ -319,7 +316,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border: solid red 2px;
+    /* border: solid red 2px; */
 }
 
 .content-middle img {
@@ -332,7 +329,7 @@ footer {
 #text-mid {
     padding: 40px;
     max-width: 700px;
-    border: solid red 2px;
+    /* border: solid red 2px; */
 }
 
 #btn-page2 {
@@ -349,20 +346,20 @@ footer {
 
 /* ===================== BOTTOM CONTAINER ================= */
 .bottom-container {
-    background-color: #A3B18A;
+    background-color: #ffffff;
     height: auto;
     width: 100%;
 }
 
 .bottom-card {
     max-width: 1375px;
-    border: 4px solid blueviolet;
+    /* border: 4px solid blueviolet; */
     margin: 0 auto;
-    padding: 40px;
+    padding: 60px;
 }
 
 .bottom-card h1 {
-    margin: 20px 0px;
+    margin-bottom: 20px
 }
 
 
@@ -374,7 +371,7 @@ footer {
 }
 
 #bottom-content {
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #bottom-text {
@@ -395,8 +392,43 @@ footer {
     /* margin-left: auto; */
 }
 
+/* =========== SERVICE PAGE TABLE ========= */
 
-/* =============================== PAGE 3 (CONTACT)=============================== */
+#table-content {
+    padding: 40px;
+    border: solid 6px #24362C;
+    margin: 20px auto;
+    width: 1200px;
+    background-color: #A3B18A;
+}
+
+#th-heading {
+    font-size:  2em;
+    padding: 20px 40px;
+    border: solid 4px #3A5A40;
+    background-color:white;
+}
+
+th {
+    font-size:  1.7em;
+    padding: 20px 40px;
+    border: solid 4px #3A5A40;
+    background-color:white;
+}
+
+td {
+    padding: 20px 40px;
+    border: solid 2px #3A5A40;
+    font-size: 1.5em;
+    text-align: justify;
+    background-color: white;
+    /* opacity: 80%; */
+    
+}
+
+
+
+/* =============================== PAGE 3 (CONTACT) ================================= */
 .contact-container {
     /* position: absolute;
     top: 400px; */
@@ -414,7 +446,7 @@ footer {
     background-color: #A3B18A;
     border-radius: 8px;
     width: 50%;
-    border: solid red 2px;
+    /* border: solid red 2px; */
     margin: 0 auto;
 }
 
@@ -476,7 +508,7 @@ form {
     margin: 20px auto;
     color: white;
     border: none;
-    background-color: #24362C;
+    background-color: #588157;
     width: 200px;
     padding: 10px;
     font-size: 1em;
@@ -486,4 +518,11 @@ form {
 
 
 /* ======================= RESPONSIVENESS ===================================== */
-/* @media */
+@media (max-width: 480px) {
+    .container {
+        flex: 3%;
+        padding: 10px;
+        color: red;
+
+    }
+}
